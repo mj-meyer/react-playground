@@ -1,0 +1,6 @@
+{
+  "files.enableTrash": false,
+  "files.associations": {
+    "*.js": "javascriptreact"
+  }
+}
