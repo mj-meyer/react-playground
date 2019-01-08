@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import firebase from 'firebase';
+import firebase from 'firebase/app';
+import 'firebase/auth';
 import AddFishForm from './AddFishForm';
 import EditFishForm from './EditFishForm';
 import Login from './Login';
@@ -50,7 +51,6 @@ class Inventory extends React.Component {
     });
   };
   logout = async () => {
-    console.log('Logging out!');
     await firebase.auth().signOut();
     this.setState({ uid: null });
   };
